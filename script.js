@@ -242,20 +242,16 @@ function setupMusicPlayer() {
 } 
 
 
-const yesBtn = document.getElementById("yesBtn");
-const noBtn = document.getElementById("noBtn");
-const programContent = document.getElementById("programContent");
+// Grab the final Yes button
+const finalYesBtn = document.getElementById("yesBtn3");
 const finalMessage = document.getElementById("finalMessage");
+const question3 = document.getElementById("question3");
 
-// NO button moves randomly
-noBtn.addEventListener("mouseover", () => {
-  noBtn.style.position = "absolute";
-  noBtn.style.left = Math.random() * (window.innerWidth - noBtn.offsetWidth) + "px";
-  noBtn.style.top = Math.random() * (window.innerHeight - noBtn.offsetHeight) + "px";
-});
+// When the user clicks the final Yes button:
+finalYesBtn.addEventListener("click", () => {
+    // Hide question 3
+    question3.style.display = "none";
 
-// YES button ends program
-yesBtn.addEventListener("click", () => {
-  programContent.style.display = "none";  // hide buttons
-  finalMessage.style.display = "block";   // show scrolling message
+    // Show scrolling final message
+    finalMessage.style.display = "block";
 });
