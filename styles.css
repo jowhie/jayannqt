@@ -354,7 +354,19 @@ h2 {
     background: var(--secondary-color);
 } 
 
+
+
 #finalMessage {
+  display: none;        /* hidden initially */
+  clear: both;          /* ensures it goes below all floated/inline content */
+  width: 80%;
+  margin: 50px auto 100px auto; /* centered and far enough down */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* #finalMessage {
   display: none;            /* hidden until triggered */
   width: 80%;
   margin: 0 auto;           /* center horizontally */
@@ -364,6 +376,6 @@ h2 {
   background: transparent;  /* see-through background */
   text-align: center;
   padding: 20px 0;
-}
+} */
 
 
