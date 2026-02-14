@@ -356,7 +356,7 @@ h2 {
 
 
 
-#finalMessage {
+/* #finalMessage {
   display: none;        /* hidden initially */
   clear: both;          /* ensures it goes below all floated/inline content */
   width: 80%;
@@ -365,21 +365,22 @@ h2 {
   line-height: 1.6;
   text-align: center;
     
-}
+} */
 
-/* .final-box {
-  display: none;                        /* hidden initially */
+.final-box {
+  display: none;                        /* hidden until triggered */
   background: rgba(255, 255, 255, 0.95); /* white with slight transparency */
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 600px;
-  margin: 50px auto 100px auto;        /* space above and below */
-  color: #ff4757;                       /* theme color */
+  margin: 30px auto 100px auto;        /* space above & below */
+  color: #ff4757;                       /* theme text color */
   font-size: 18px;
   line-height: 1.6;
-} */
+}
+
 
 
 
